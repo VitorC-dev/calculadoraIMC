@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/36e64f3fff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assets/images/imc.svg" alt="medicos">
+        </section>
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">Calculadora - IMC</h1>
+
+                <div class="input-box">
+                    <label for="weight">Peso em Kg</label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" step="0.01" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em Metros</label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" id="height" step="0.01" required>
+                        <span>m</span>
+                    </div>
+                </div>
+
+                <button id="calculate">Calcular IMC</button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more-info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
